@@ -1,0 +1,27 @@
+.lesson-element {
+    border: 4px solid;
+    border-color: #321fdb;
+    border-radius: 10px;
+    width: 90%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 60px 20px 70px;
+}
+
+.lesson-progress-element {
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+.lesson-button {
+    width: 100px;
+    height: 50px;
+}
+
+.lesson-name {
+    width: 360px;
+}
