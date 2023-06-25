@@ -1,6 +1,12 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About the project
+LearnBuddy, an E-learning platform containing several courses, each course can have "N" number of lessons, each lesson will contain a video and after the user watches the video, there will be some questions. If the user successfully completes all the questions, the user will be moved to the next lesson, otherwise they have to restart the current lesson.
+
+The application has 3 pages, one to list down all the courses, lessons and another page for the user to take a lesson (video and the quiz).
+
+For data, I have used a json file.
 
 ## Available Scripts
 
