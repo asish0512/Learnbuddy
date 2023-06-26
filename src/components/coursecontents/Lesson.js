@@ -5,7 +5,8 @@ import "./Lesson.css"
 import {CButton } from '@coreui/react';
 import { Link } from 'react-router-dom';
 
-const Lesson = ({id, name, progress, watchCount}) => {
+const Lesson = (props) => {
+  const {id, name, progress} = props
     return (
     <div className='lesson-element'>
       <h3 className='lesson-name'>{name}</h3>

@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import "./Quiz.css"
 
-export default function Quiz({questions, showScore,  setShowScore, setPassed}) {
+export default function Quiz(props) {
+	const {questions, showScore,  setShowScore, setPassed} = props
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [score, setScore] = useState(0);
+	
 	useEffect(() => {
 			if (score === questions.length) {
 				setPassed(true);
 			}
+		 // eslint-disable-next-line react-hooks/exhaustive-deps
 	},[showScore]);
 	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {

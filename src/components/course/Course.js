@@ -3,7 +3,8 @@ import Card from '../card/Card'
 import Progressbar from '../progressbar/Progressbar'
 import "./Course.css"
 
-const Course = ({id, name, progress}) => {
+const Course = (props) => {
+  const {id, name, progress} = props
   return (
     <div className='course-element'>
       <Card

@@ -12,6 +12,8 @@ const Coursecont = () => {
     useEffect(() => {
         fetchObj.current = course_content[params?.courseId - 1];
         setData(fetchObj.current);
+        
+      	// eslint-disable-next-line react-hooks/exhaustive-deps
     },[]);
 
 
@@ -32,7 +34,6 @@ const Coursecont = () => {
                         id = {lesson.id}
                         name = {lesson.name}
                         progress={lesson.progress}
-                        watchCount={lesson.watchCount}
                     />
                 )
             })

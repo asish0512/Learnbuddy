@@ -1,11 +1,12 @@
 import React from 'react'
-import {CCard, CCardImage, CCardBody, CCardText, CCardTitle, CButton } from '@coreui/react';
+import {CCard, CCardImage, CCardBody, CCardTitle, CButton } from '@coreui/react';
 import '@coreui/coreui/dist/css/coreui.min.css'
 import "./Card.css"
 import { Link } from 'react-router-dom';
 
 
-const Card = ({id, name}) => {
+const Card = (props) => {
+  const {id, name} = props
   return (
     <div className='card-elements'>
       <CCard className="card-element">
